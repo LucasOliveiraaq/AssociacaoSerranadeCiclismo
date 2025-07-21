@@ -24,6 +24,21 @@ import asc2 from "./assets/Asc2.png";
 import asc3 from "./assets/Asc3.png";
 
 import odonto from "./assets/odonto.png";
+import ciclesBeto from "./assets/CiclesBeto.png";
+import abBike from "./assets/AB BIKE & FITNESS.png";
+import consertaBike from "./assets/Conserta bike.png";
+import motoCenterBike from "./assets/Moto Center bike.png";
+import vitBike from "./assets/Vit bike.png";
+import oficinaBikeRider from "./assets/Oficina Bike Rider 31.png";
+import proBike from "./assets/Pro bike.png";
+import vr7Cycles from "./assets/VR7 cycles.png";
+import fundacao from "./assets/Fundação Municipal de Esportes.png";
+import transito from "./assets/gentes de trânsito municipais.png";
+import pm from "./assets/pm.png";
+import prefeitura from "./assets/prefeitura.png";
+import prf from "./assets/PRF.png";
+import puris from "./assets/Puris.png";
+import semasa from "./assets/Semasa.png";
 
 import logo from "./assets/logo.png";
 
@@ -36,7 +51,24 @@ function App() {
 
   const galleryImages = [asc, asc2, asc3];
 
-  const sponsors = [{ name: "Sponsor 1", logo: odonto }];
+  const sponsors = [
+    { name: "Sponsor 1", logo: odonto },
+    { name: "Sponsor 2", logo: ciclesBeto },
+    { name: "Sponsor 3", logo: abBike },
+    { name: "Sponsor 4", logo: consertaBike },
+    { name: "Sponsor 5", logo: motoCenterBike },
+    { name: "Sponsor 6", logo: vitBike },
+    { name: "Sponsor 7", logo: oficinaBikeRider },
+    { name: "Sponsor 8", logo: proBike },
+    { name: "Sponsor 9", logo: vr7Cycles },
+    { name: "Sponsor 10", logo: fundacao },
+    { name: "Sponsor 11", logo: transito },
+    { name: "Sponsor 12", logo: pm },
+    { name: "Sponsor 13", logo: prefeitura },
+    { name: "Sponsor 14", logo: prf },
+    { name: "Sponsor 15", logo: puris },
+    { name: "Sponsor 16", logo: semasa },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -286,126 +318,63 @@ function App() {
         </div>
       </section>
 
+      {/* Seção Contrato */}
+      <section id="contrato" className="contrato">
+        <div className="container">
+          <div
+            style={{
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
+            <img
+              src={require("./assets/Contrato.png")}
+              alt="Instrumento Assinado"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section
         id="contact"
         style={{ padding: "5rem 0", backgroundColor: "#f9fafb" }}
       >
-        <div
-          style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 1rem" }}
-        >
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "3rem",
-            }}
-          >
+        <div className="container">
+          <div className="contact-wrapper">
+            {/* Coluna 1 - Texto e redes sociais */}
             <div>
-              <h3
-                style={{
-                  fontSize: "2.25rem",
-                  fontWeight: "bold",
-                  color: "#1f2937",
-                  marginBottom: "1.5rem",
-                }}
-              >
-                Entre em Contato
-              </h3>
-              <p
-                style={{
-                  fontSize: "1.125rem",
-                  color: "#4b5563",
-                  marginBottom: "2rem",
-                  lineHeight: "1.75rem",
-                }}
-              >
+              <h3 className="contact-title">Entre em Contato</h3>
+              <p className="contact-description">
                 Ficou interessado em fazer parte da nossa comunidade? Entre em
                 contato conosco e venha pedalar junto! Estamos localizados em
                 Lages, Santa Catarina, e sempre recebemos novos ciclistas de
                 braços abertos.
               </p>
 
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "1.5rem",
-                }}
-              >
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-                >
-                  <div
-                    style={{
-                      width: 48,
-                      height: 48,
-                      backgroundColor: "#dbeafe",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
+              <div className="contact-info">
+                <div className="contact-item">
+                  <div className="icon-circle blue">
                     <MapPin size={24} style={{ color: "#2563eb" }} />
                   </div>
                   <div>
-                    <h4 style={{ fontWeight: "600", color: "#1f2937" }}>
-                      Endereço
-                    </h4>
+                    <h4 className="contact-label">Endereço</h4>
                     <p>Lages, Santa Catarina - Brasil</p>
                   </div>
                 </div>
-
-                 {/*<div
-                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-                >
-                  <div
-                    style={{
-                      width: 48,
-                      height: 48,
-                      backgroundColor: "#d1fae5",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <Mail size={24} style={{ color: "#059669" }} />
-                  </div>
-                 <div>
-                    <h4 style={{ fontWeight: "600", color: "#1f2937" }}>
-                      Email
-                    </h4>
-                    <p>contato@asc.com.br</p>
-                  </div>
-                </div> */}
-              </div> 
+              </div>
 
               <div style={{ marginTop: "2rem" }}>
-                <h4
-                  style={{
-                    fontWeight: "600",
-                    color: "#1f2937",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  Siga-nos nas redes sociais
-                </h4>
-                <div
-                  style={{ display: "flex", gap: "1rem", alignItems: "center" }}
-                >
+                <h4 className="contact-label">Siga-nos nas redes sociais</h4>
+                <div className="social-links">
                   <a
                     href="https://instagram.com/ciclistas_lageanos"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.5rem",
-                      textDecoration: "none",
-                      color: "#1f2937",
-                    }}
                   >
                     <Instagram size={20} />
                     <span>@ciclistas_lageanos</span>
@@ -414,13 +383,6 @@ function App() {
                     href="https://instagram.com/associacaoserranadeciclismo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.5rem",
-                      textDecoration: "none",
-                      color: "#1f2937",
-                    }}
                   >
                     <Instagram size={20} />
                     <span>@associacaoserranadeciclismo</span>
@@ -429,13 +391,11 @@ function App() {
               </div>
             </div>
 
+            {/* Coluna 2 - Cadastro e mapa */}
             <div>
-              <h4 style={{ fontWeight: "600", marginBottom: "1rem" }}>
-                Seja um Ciclista ASC
-              </h4>
-
+              <h4 className="contact-label">Seja um Ciclista ASC</h4>
               <div style={{ marginBottom: "1.5rem" }}>
-                <p style={{ marginBottom: "0.5rem", color: "#374151" }}>
+                <p className="contact-description">
                   Cadastre-se e aproveite todos os benefícios da nossa
                   associação.
                 </p>
@@ -443,13 +403,14 @@ function App() {
                   href="https://tr.ee/bN3FC3JCHV"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="btn btn-primary"
                   style={{
-                    display: "inline-block",
-                    backgroundColor: "#2563eb",
-                    color: "#fff",
                     padding: "0.75rem 1.5rem",
                     borderRadius: "8px",
                     fontWeight: "bold",
+                    display: "inline-block",
+                    backgroundColor: "#2563eb",
+                    color: "#fff",
                     textDecoration: "none",
                   }}
                 >
@@ -457,31 +418,8 @@ function App() {
                 </a>
               </div>
 
-              <div
-                style={{
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  marginBottom: "1rem",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                }}
-              >
-                <img
-                  src={require("./assets/Contrato.png")}
-                  alt="Instrumento Assinado"
-                  style={{ width: "100%", height: "auto", display: "block" }}
-                />
-              </div>
-
-              <h4 style={{ fontWeight: "600", marginBottom: "1rem" }}>
-                Nossa Localização
-              </h4>
-              <div
-                style={{
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  marginBottom: "1rem",
-                }}
-              >
+              <h4 className="contact-label">Nossa Localização</h4>
+              <div className="map-container">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56832.84351822308!2d-50.36168842167969!3d-27.816063999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df46f4b8b7d4e5%3A0x7d4b4b4b4b4b4b4b!2sLages%2C%20SC!5e0!3m2!1spt!2sbr!4v1642000000000!5m2!1spt!2sbr"
                   width="100%"
